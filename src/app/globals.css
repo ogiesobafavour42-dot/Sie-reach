@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #14213d;
+  --color-ivory: #f7f3ea;
+  --color-gold: #a8844a;
+  --color-line: #e2dccd;
+  --font-serif: Georgia, "Times New Roman", serif;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100dvh;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+input,
+select,
+textarea {
+  font-size: 16px; /* prevents iOS/Android zoom */
+}
+
+.card {
+  background: #fffdf8;
+  border: 1px solid var(--color-line);
+  border-radius: 8px;
+  padding: 14px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid var(--color-navy);
+  background: var(--color-navy);
+  color: var(--color-ivory);
+  min-height: 42px;
+}
+.btn:disabled {
+  opacity: 0.55;
+}
+.btn-ghost {
+  background: transparent;
+  color: var(--color-navy);
+}
+.btn-gold {
+  background: var(--color-gold);
+  border-color: var(--color-gold);
+  color: #fff;
+}
+.btn-danger {
+  background: transparent;
+  border-color: #9b2c2c;
+  color: #9b2c2c;
+}
+.btn-sm {
+  min-height: 34px;
+  padding: 6px 10px;
+  font-size: 13px;
+}
+
+.field {
+  width: 100%;
+  border: 1px solid var(--color-line);
+  background: #fff;
+  border-radius: 6px;
+  padding: 10px 12px;
+  min-height: 44px;
+}
+.label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 12px 0 4px;
+  color: #4a5568;
+}
+.badge {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 2px 9px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: #ece6d6;
+}
+h1,
+h2 {
+  font-family: var(--font-serif);
+}
